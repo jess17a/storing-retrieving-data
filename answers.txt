@@ -16,7 +16,11 @@ running locally
   (Elapsed real (wall clock) time used by the process, in seconds.  
   Total number of CPU-seconds that the process used directly (in user mode), in seconds.
   Total number of CPU-seconds used by the system on behalf of the process (in kernel mode), in seconds.)
-running on AWS - 
+running on AWS 
+  real	13m10.305s
+  user	0m1.374s
+  sys	0m0.334s
+  
 4. How many address tags are there in the input?
 2955+2185=5140
 
