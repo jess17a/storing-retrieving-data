@@ -23,7 +23,7 @@ running on AWS
   
 4. How many address tags are there in the input?
 2955+2185=5140
-1767
+1767+1686+
 
 5. Does the local version and EMR version give the same answer?
 
