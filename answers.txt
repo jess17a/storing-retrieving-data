@@ -1,75 +1,19 @@
-What to Turn In
-
-You must turn in a pull request containing the following:
-
-1. A copy of the output directory for the tag counter running locally (name the directory 'out').
-2. A copy of the output from S3 for the tag counter running on AWS (name the directory 'emr-out').
 3. How long did it take to run the process for each of these?
-  commoncrawl:
-  processed_pages: 42040
-  processed_records: 129958
-
-running locally
+running locally:
   real	2m10.542s
   user	2m6.372s
   sys	0m5.047s
-  (Elapsed real (wall clock) time used by the process, in seconds.  
-  Total number of CPU-seconds that the process used directly (in user mode), in seconds.
-  Total number of CPU-seconds used by the system on behalf of the process (in kernel mode), in seconds.)
-running on AWS 
+
+running on AWS: 
   real	13m10.305s
   user	0m1.374s
   sys	0m0.334s
   
 4. How many address tags are there in the input?
-2955+2185=5140
-1767+1686+
+5140
+
 
 5. Does the local version and EMR version give the same answer?
-
-
-Please submit the answers to 3-5 in a text file called answers.txt
-
-
-Getting Started
-
-This assignment will step you through the process of running a simple computation over a data set 
-using Map/Reduce via mrjob. The goal of the assignment is to have you walk through the process of 
-using git, github, python, mrjob, and AWS and ensure you are setup with all the various tools and services.
-
-Tasks
-
-Part 1
-
-Note: Keep track of the time necessary to run the process locally. 
-For Linux/Mac users, you can use the time command to compute this.
-
-Follow the instructions at https://github.com/alexmilowski/data-science/tree/master/activities/common-crawl 
-to get setup with the tools and code.
-Run the process locally on your computer.
-
-Part 2
-
-Follow the process for running the tag counter on AWS EMR.
-Download the output from S3.
-
-
-How to Turn in Assignments
-
-Setup
-
-You'll need to create a repository for your assignments. 
-You can request a discount as a student so that you can have a private repository. 
-Otherwise, all your assignments will be publically accessible.
-
-Once you've setup your repository, you'll want to add your instructor as a collaborator. 
-That way they can merge your pull requests when they are graded.
-
-The Process
-
-Create a branch of your repository for the homework and make your changes in that branch.
-Commit and push your changes to the branch.
-Create a pull request for the code you'd like to turn in.
-Your instructor can now view the pull request and grade the assignment.
-Once your instructor has graded the assignment, they can merge the pull request as a final notification.
-You can now delete the branch as the changes have been merged with the master.
+Yes, the output is split into 2 files running locally, 2955 and 2185 rows, 
+and 3 files running on AWS, 1767, 1686, and 1687 rows.  
+The results are in different orders, but the content is the same.
