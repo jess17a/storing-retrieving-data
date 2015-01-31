@@ -1,0 +1,19 @@
+3. How long did it take to run the process for each of these?
+running locally:
+  real	2m10.542s
+  user	2m6.372s
+  sys	0m5.047s
+
+running on AWS: 
+  real	13m10.305s
+  user	0m1.374s
+  sys	0m0.334s
+  
+4. How many address tags are there in the input?
+5140
+
+
+5. Does the local version and EMR version give the same answer?
+Yes, the output is split into 2 files running locally, 2955 and 2185 rows, 
+and 3 files running on AWS, 1767, 1686, and 1687 rows.  
+The results are in different orders, but the content is the same.
